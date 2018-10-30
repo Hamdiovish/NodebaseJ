@@ -14,17 +14,19 @@
 
 package wallettemplate.utils;
 
-import org.pivxj.core.listeners.DownloadProgressTracker;
-import org.pivxj.wallet.Wallet;
-import org.pivxj.wallet.listeners.WalletChangeEventListener;
-import org.pivxj.core.*;
+import java.util.Date;
+
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
-import java.util.Date;
+import org.nodebasej.core.Address;
+import org.nodebasej.core.Coin;
+import org.nodebasej.core.listeners.DownloadProgressTracker;
+import org.nodebasej.wallet.Wallet;
+import org.nodebasej.wallet.listeners.WalletChangeEventListener;
 
 /**
  * A class that exposes relevant bitcoin stuff as JavaFX bindable properties.

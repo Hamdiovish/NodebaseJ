@@ -14,8 +14,19 @@
 
 package wallettemplate.utils;
 
-import com.google.common.base.Throwables;
-import javafx.animation.*;
+import static com.google.common.base.Preconditions.checkState;
+import static wallettemplate.utils.WTUtils.unchecked;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.function.BiConsumer;
+
+import javafx.animation.Animation;
+import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.ScaleTransition;
+import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -27,12 +38,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import wallettemplate.MainController;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.function.BiConsumer;
-
-import static com.google.common.base.Preconditions.checkState;
-import static wallettemplate.utils.WTUtils.unchecked;
+import com.google.common.base.Throwables;
 
 public class GuiUtils {
     public static void runAlert(BiConsumer<Stage, AlertWindowController> setup) {

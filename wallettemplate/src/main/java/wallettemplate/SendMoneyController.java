@@ -14,26 +14,34 @@
 
 package wallettemplate;
 
-import javafx.scene.layout.HBox;
-import org.pivxj.core.*;
-import org.pivxj.wallet.SendRequest;
-import org.pivxj.wallet.Wallet;
-
-import com.google.common.util.concurrent.FutureCallback;
-import com.google.common.util.concurrent.Futures;
+import static com.google.common.base.Preconditions.checkState;
+import static wallettemplate.utils.GuiUtils.checkGuiThread;
+import static wallettemplate.utils.GuiUtils.crashAlert;
+import static wallettemplate.utils.GuiUtils.informationalAlert;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+
+import javax.annotation.Nullable;
+
+import org.nodebasej.core.Address;
+import org.nodebasej.core.Coin;
+import org.nodebasej.core.ECKey;
+import org.nodebasej.core.InsufficientMoneyException;
+import org.nodebasej.core.Transaction;
+import org.nodebasej.core.TransactionConfidence;
+import org.nodebasej.wallet.SendRequest;
+import org.nodebasej.wallet.Wallet;
 import org.spongycastle.crypto.params.KeyParameter;
+
 import wallettemplate.controls.BitcoinAddressValidator;
 import wallettemplate.utils.TextFieldValidator;
 import wallettemplate.utils.WTUtils;
 
-import static com.google.common.base.Preconditions.checkState;
-import static wallettemplate.utils.GuiUtils.*;
-
-import javax.annotation.Nullable;
+import com.google.common.util.concurrent.FutureCallback;
+import com.google.common.util.concurrent.Futures;
 
 public class SendMoneyController {
     public Button sendBtn;

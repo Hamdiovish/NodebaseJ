@@ -14,22 +14,31 @@
 
 package wallettemplate;
 
-import com.google.protobuf.*;
-import javafx.application.*;
-import javafx.event.*;
-import javafx.fxml.*;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
-import org.pivxj.crypto.*;
-import org.pivxj.wallet.*;
-import org.slf4j.*;
-import org.spongycastle.crypto.params.*;
-import wallettemplate.utils.*;
+import static wallettemplate.utils.GuiUtils.fadeIn;
+import static wallettemplate.utils.GuiUtils.fadeOut;
+import static wallettemplate.utils.GuiUtils.informationalAlert;
 
-import java.time.*;
-import java.util.concurrent.*;
+import java.time.Duration;
+import java.util.concurrent.CompletableFuture;
 
-import static wallettemplate.utils.GuiUtils.*;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.ProgressIndicator;
+import javafx.scene.layout.GridPane;
+
+import org.nodebasej.crypto.KeyCrypterScrypt;
+import org.nodebasej.wallet.Protos;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.spongycastle.crypto.params.KeyParameter;
+
+import wallettemplate.utils.KeyDerivationTasks;
+
+import com.google.protobuf.ByteString;
 
 public class WalletSetPasswordController {
     private static final Logger log = LoggerFactory.getLogger(WalletSetPasswordController.class);

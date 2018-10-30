@@ -14,11 +14,22 @@
 
 package wallettemplate;
 
-import org.pivxj.core.Utils;
-import org.pivxj.crypto.MnemonicCode;
-import org.pivxj.wallet.DeterministicSeed;
-import com.google.common.base.Splitter;
-import com.google.common.util.concurrent.Service;
+import static com.google.common.base.Preconditions.checkNotNull;
+import static javafx.beans.binding.Bindings.createBooleanBinding;
+import static javafx.beans.binding.Bindings.equal;
+import static javafx.beans.binding.Bindings.not;
+import static javafx.beans.binding.Bindings.or;
+import static wallettemplate.utils.GuiUtils.checkGuiThread;
+import static wallettemplate.utils.GuiUtils.informationalAlert;
+import static wallettemplate.utils.WTUtils.didThrow;
+import static wallettemplate.utils.WTUtils.unchecked;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.util.List;
+
 import javafx.application.Platform;
 import javafx.beans.binding.BooleanBinding;
 import javafx.event.ActionEvent;
@@ -26,24 +37,20 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
+
+import javax.annotation.Nullable;
+
+import org.nodebasej.core.Utils;
+import org.nodebasej.crypto.MnemonicCode;
+import org.nodebasej.wallet.DeterministicSeed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
+
 import wallettemplate.utils.TextFieldValidator;
 
-import javax.annotation.Nullable;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.util.List;
-
-import static com.google.common.base.Preconditions.checkNotNull;
-import static javafx.beans.binding.Bindings.*;
-import static wallettemplate.utils.GuiUtils.checkGuiThread;
-import static wallettemplate.utils.GuiUtils.informationalAlert;
-import static wallettemplate.utils.WTUtils.didThrow;
-import static wallettemplate.utils.WTUtils.unchecked;
+import com.google.common.base.Splitter;
+import com.google.common.util.concurrent.Service;
 
 public class WalletSettingsController {
     private static final Logger log = LoggerFactory.getLogger(WalletSettingsController.class);

@@ -14,11 +14,7 @@
 
 package wallettemplate;
 
-import org.pivxj.core.listeners.DownloadProgressTracker;
-import org.pivxj.core.Coin;
-import org.pivxj.utils.MonetaryFormat;
-import com.subgraph.orchid.TorClient;
-import com.subgraph.orchid.TorInitializationListener;
+import static wallettemplate.Main.bitcoin;
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
@@ -29,14 +25,20 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.util.Duration;
+
 import org.fxmisc.easybind.EasyBind;
+import org.nodebasej.core.Coin;
+import org.nodebasej.core.listeners.DownloadProgressTracker;
+import org.nodebasej.utils.MonetaryFormat;
+
 import wallettemplate.controls.ClickableBitcoinAddress;
 import wallettemplate.controls.NotificationBarPane;
 import wallettemplate.utils.BitcoinUIModel;
 import wallettemplate.utils.easing.EasingMode;
 import wallettemplate.utils.easing.ElasticInterpolator;
 
-import static wallettemplate.Main.bitcoin;
+import com.subgraph.orchid.TorClient;
+import com.subgraph.orchid.TorInitializationListener;
 
 /**
  * Gets created auto-magically by FXMLLoader via reflection. The widget fields are set to the GUI controls they're named

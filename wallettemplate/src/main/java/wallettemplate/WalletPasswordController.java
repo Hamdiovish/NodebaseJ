@@ -14,10 +14,15 @@
 
 package wallettemplate;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+import static wallettemplate.utils.GuiUtils.checkGuiThread;
+import static wallettemplate.utils.GuiUtils.fadeIn;
+import static wallettemplate.utils.GuiUtils.fadeOut;
+import static wallettemplate.utils.GuiUtils.informationalAlert;
+
+import java.time.Duration;
+
 import javafx.application.Platform;
-import org.pivxj.crypto.KeyCrypterScrypt;
-import com.google.common.primitives.Longs;
-import com.google.protobuf.ByteString;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
@@ -28,15 +33,16 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+
+import org.nodebasej.crypto.KeyCrypterScrypt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
+
 import wallettemplate.utils.KeyDerivationTasks;
 
-import java.time.Duration;
-
-import static com.google.common.base.Preconditions.checkNotNull;
-import static wallettemplate.utils.GuiUtils.*;
+import com.google.common.primitives.Longs;
+import com.google.protobuf.ByteString;
 
 /**
  * User interface for entering a password on demand, e.g. to send money. Also used when encrypting a wallet. Shows a

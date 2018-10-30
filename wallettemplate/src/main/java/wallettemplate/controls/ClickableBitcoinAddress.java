@@ -1,5 +1,4 @@
-/*
- * Licensed under the Apache License, Version 2.0 (the "License");
+/* Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -14,8 +13,8 @@
 
 package wallettemplate.controls;
 
-import org.pivxj.core.Address;
-import org.pivxj.uri.PivxURI;
+import org.nodebasej.core.Address;
+import org.nodebasej.uri.PivxURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;

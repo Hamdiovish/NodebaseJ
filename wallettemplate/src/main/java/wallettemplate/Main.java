@@ -16,12 +16,12 @@ package wallettemplate;
 
 import com.google.common.util.concurrent.*;
 import javafx.scene.input.*;
-import org.pivxj.core.NetworkParameters;
-import org.pivxj.kits.WalletAppKit;
-import org.pivxj.params.*;
-import org.pivxj.utils.BriefLogFormatter;
-import org.pivxj.utils.Threading;
-import org.pivxj.wallet.DeterministicSeed;
+import org.nodebasej.core.NetworkParameters;
+import org.nodebasej.kits.WalletAppKit;
+import org.nodebasej.params.*;
+import org.nodebasej.utils.BriefLogFormatter;
+import org.nodebasej.utils.Threading;
+import org.nodebasej.wallet.DeterministicSeed;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -98,7 +98,7 @@ public class Main extends Application {
 
         // Make log output concise.
         BriefLogFormatter.init();
-        // Tell pivxj to run event handlers on the JavaFX UI thread. This keeps things simple and means
+        // Tell nodebasej to run event handlers on the JavaFX UI thread. This keeps things simple and means
         // we cannot forget to switch threads when adding event handlers. Unfortunately, the DownloadListener
         // we give to the app kit is currently an exception and runs on a library thread. It'll get fixed in
         // a future version.
@@ -140,13 +140,16 @@ public class Main extends Application {
         };
         // Now configure and start the appkit. This will take a second or two - we could show a temporary splash screen
         // or progress widget to keep the user engaged whilst we initialise, but we don't.
-        if (params == RegTestParams.get()) {
+        
+        /*if (params == RegTestParams.get()) {
             bitcoin.connectToLocalHost();   // You should run a regtest mode bitcoind locally.
         } else if (params == TestNet3Params.get()) {
             // As an example!
             bitcoin.useTor();
             // bitcoin.setDiscovery(new HttpDiscovery(params, URI.create("http://localhost:8080/peers"), ECKey.fromPublicOnly(BaseEncoding.base16().decode("02cba68cfd0679d10b186288b75a59f9132b1b3e222f6332717cb8c4eb2040f940".toUpperCase()))));
         }
+        */
+        
         bitcoin.setDownloadListener(controller.progressBarUpdater())
                .setBlockingStartup(false)
                .setUserAgent(APP_NAME, "1.0");

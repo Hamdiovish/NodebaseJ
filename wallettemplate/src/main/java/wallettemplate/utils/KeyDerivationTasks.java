@@ -14,19 +14,22 @@
 
 package wallettemplate.utils;
 
-import org.pivxj.crypto.KeyCrypterScrypt;
-import com.google.common.util.concurrent.Uninterruptibles;
+import static wallettemplate.utils.GuiUtils.checkGuiThread;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.concurrent.Task;
+
+import javax.annotation.Nullable;
+
+import org.nodebasej.crypto.KeyCrypterScrypt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
 
-import javax.annotation.*;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
-import static wallettemplate.utils.GuiUtils.checkGuiThread;
+import com.google.common.util.concurrent.Uninterruptibles;
 
 /**
  * Background tasks for pumping a progress meter and deriving an AES key using scrypt.

@@ -1,0 +1,252 @@
+Oct 30, 2018 3:44:05 PM org.nodebasej.core.Context <init>
+INFO: Creating pivxj 0.14.3-12.1 context.
+Oct 30, 2018 3:44:12 PM org.nodebasej.core.Context setPeerGroupAndBlockChain
+SEVERE: ##### Pivx init not called!, this is going to be an issue in the future
+Oct 30, 2018 3:44:12 PM org.nodebasej.core.PeerGroup startAsync
+WARNING: Starting up with no attached block chain. Did you forget to pass one to the constructor?
+Oct 30, 2018 3:44:12 PM org.nodebasej.core.PeerGroup$8 run
+INFO: Starting ...
+Oct 30, 2018 3:44:14 PM org.nodebasej.core.PeerGroup connectTo
+INFO: Attempting connection to [127.0.0.1]:22001     (0 connected, 1 pending, 0 max)
+Oct 30, 2018 3:44:16 PM org.nodebasej.net.NioClientManager handleKey
+WARNING: Failed to connect with exception: java.net.ConnectException: Connection refused
+Oct 30, 2018 3:44:17 PM org.nodebasej.core.PeerGroup maybeCheckForLocalhostPeer
+INFO: Localhost peer not detected.
+Oct 30, 2018 3:44:17 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 82.69 μs and returned 0 items
+Oct 30, 2018 3:44:17 PM org.nodebasej.core.PeerGroup handlePeerDeath
+INFO: [127.0.0.1]:22001: Peer died      (0 connected, 0 pending, 1 max)
+Oct 30, 2018 3:44:18 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 1500 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:18 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.63 μs and returned 0 items
+Oct 30, 2018 3:44:18 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 2250 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:19 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.01 μs and returned 0 items
+Oct 30, 2018 3:44:19 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 3375 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.36 μs and returned 0 items
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 5062 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerSocketHandler timeoutOccurred
+INFO: [127.0.0.1]:22001: Timed out
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerGroup handlePeerDeath
+INFO: [127.0.0.1]:22001: Peer died      (0 connected, 0 pending, 1 max)
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 10.53 μs and returned 0 items
+Oct 30, 2018 3:44:20 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:22 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 17.26 μs and returned 0 items
+Oct 30, 2018 3:44:22 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:25 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 57.20 μs and returned 0 items
+Oct 30, 2018 3:44:25 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:30 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 17.94 μs and returned 0 items
+Oct 30, 2018 3:44:30 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:32 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.86 μs and returned 0 items
+Oct 30, 2018 3:44:32 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:35 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.50 μs and returned 0 items
+Oct 30, 2018 3:44:35 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:40 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 19.65 μs and returned 0 items
+Oct 30, 2018 3:44:40 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:42 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.40 μs and returned 0 items
+Oct 30, 2018 3:44:42 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:45 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.25 μs and returned 0 items
+Oct 30, 2018 3:44:45 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:50 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.33 μs and returned 0 items
+Oct 30, 2018 3:44:50 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:52 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.41 μs and returned 0 items
+Oct 30, 2018 3:44:52 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:44:55 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.34 μs and returned 0 items
+Oct 30, 2018 3:44:55 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:00 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.92 μs and returned 0 items
+Oct 30, 2018 3:45:00 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:02 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 11.77 μs and returned 0 items
+Oct 30, 2018 3:45:02 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:05 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 11.80 μs and returned 0 items
+Oct 30, 2018 3:45:05 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:10 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 11.37 μs and returned 0 items
+Oct 30, 2018 3:45:10 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:12 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.44 μs and returned 0 items
+Oct 30, 2018 3:45:12 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:15 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.22 μs and returned 0 items
+Oct 30, 2018 3:45:15 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:20 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 11.92 μs and returned 0 items
+Oct 30, 2018 3:45:22 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:22 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.47 μs and returned 0 items
+Oct 30, 2018 3:45:22 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:25 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.31 μs and returned 0 items
+Oct 30, 2018 3:45:25 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:32 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.71 μs and returned 0 items
+Oct 30, 2018 3:45:32 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:32 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.78 μs and returned 0 items
+Oct 30, 2018 3:45:32 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:35 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.66 μs and returned 0 items
+Oct 30, 2018 3:45:35 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:42 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.40 μs and returned 0 items
+Oct 30, 2018 3:45:42 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:42 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.14 μs and returned 0 items
+Oct 30, 2018 3:45:42 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:45 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.34 μs and returned 0 items
+Oct 30, 2018 3:45:45 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:52 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.55 μs and returned 0 items
+Oct 30, 2018 3:45:52 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:52 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 29.61 μs and returned 0 items
+Oct 30, 2018 3:45:52 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:45:55 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 45.60 μs and returned 0 items
+Oct 30, 2018 3:45:55 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:02 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.74 μs and returned 0 items
+Oct 30, 2018 3:46:02 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:02 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 15.75 μs and returned 0 items
+Oct 30, 2018 3:46:02 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:05 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.71 μs and returned 0 items
+Oct 30, 2018 3:46:05 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:12 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.69 μs and returned 0 items
+Oct 30, 2018 3:46:12 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:12 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.62 μs and returned 0 items
+Oct 30, 2018 3:46:12 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:15 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.13 μs and returned 0 items
+Oct 30, 2018 3:46:15 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:22 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.85 μs and returned 0 items
+Oct 30, 2018 3:46:22 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:22 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.04 μs and returned 0 items
+Oct 30, 2018 3:46:22 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:25 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.99 μs and returned 0 items
+Oct 30, 2018 3:46:25 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:32 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.86 μs and returned 0 items
+Oct 30, 2018 3:46:32 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:32 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.14 μs and returned 0 items
+Oct 30, 2018 3:46:32 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:35 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.93 μs and returned 0 items
+Oct 30, 2018 3:46:35 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:42 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.96 μs and returned 0 items
+Oct 30, 2018 3:46:42 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:42 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.29 μs and returned 0 items
+Oct 30, 2018 3:46:42 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:45 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.52 μs and returned 0 items
+Oct 30, 2018 3:46:45 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:52 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.01 μs and returned 0 items
+Oct 30, 2018 3:46:52 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:52 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 12.58 μs and returned 0 items
+Oct 30, 2018 3:46:52 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:46:55 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 15.06 μs and returned 0 items
+Oct 30, 2018 3:46:55 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:02 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.28 μs and returned 0 items
+Oct 30, 2018 3:47:02 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:02 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 14.57 μs and returned 0 items
+Oct 30, 2018 3:47:02 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:05 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 13.53 μs and returned 0 items
+Oct 30, 2018 3:47:05 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:12 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 40.55 μs and returned 0 items
+Oct 30, 2018 3:47:12 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:12 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 11.55 μs and returned 0 items
+Oct 30, 2018 3:47:12 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001
+Oct 30, 2018 3:47:15 PM org.nodebasej.core.PeerGroup discoverPeers
+INFO: Peer discovery took 173.8 μs and returned 0 items
+Oct 30, 2018 3:47:15 PM org.nodebasej.core.PeerGroup$6 go
+INFO: Waiting 10000 msec before next connect attempt to [127.0.0.1]:22001

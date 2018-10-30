@@ -1,0 +1,15 @@
+14:58:59 1 WalletToolJar.main: Starting up ...
+14:59:00 1 Context.<init>: Creating nodebasej 0.14.3-12.1 context.
+seed: 4d45c5bc2979b3f3a115f12928b946ebfd860f10839cc78f0307e5f74e1897e289dfaa9a105cda950c7c72c962ad5762c88c20596d3966f2dc8e9745dad39759creationTime: 1540585271 , mnemonic code: [reward, artist, citizen, flock, call, hint, fade, fringe, source, suggest, file, link]
+14:59:01 1 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 000007e95600dfaabb7defd2b97ca02f0cb927e41e39f1a239a96f2671895d4c
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   merkle root: b2c056261007b6dcd5ecae1b950f5c01a9ed876372f1f73a4c39d143b91542bd
+   time: 1534792829 (2018-08-20T19:20:29Z)
+   difficulty target (nBits): 504365040
+   nonce: 1250780
+
+14:59:01 1 AbstractBlockChain.addWallet: Wallet/chain height mismatch: -1 vs 0
+14:59:01 1 AbstractBlockChain.addWallet: Hashes: null vs 000007e95600dfaabb7defd2b97ca02f0cb927e41e39f1a239a96f2671895d4c

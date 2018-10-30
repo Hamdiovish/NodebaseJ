@@ -1,0 +1,6 @@
+1° Wallet creation
+create --wallet="wallet.txt" --force --net=MAIN --mode=SPV --debuglog
+2° Dump wallet
+dump  --dump-privkeys --wallet="wallet.txt" --force --net=MAIN --mode=SPV --debuglog
+3° Synch
+sync --wallet="wallet.txt" --force --net=MAIN --mode=SPV --peers=45.77.1.83,192.168.1.15 --debuglog
